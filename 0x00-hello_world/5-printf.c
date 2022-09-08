@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 /**
  *  * main - prints the phrase "with proper grammar, but the outcome is a piece of art,
@@ -7,5 +7,6 @@ nclude <stdio.h>
 int main(void)
 {
 		puts("\"with proper grammar, but the outcome is a piece of art,\n");
-}			return (0);
+			return (0);
+}
 			
