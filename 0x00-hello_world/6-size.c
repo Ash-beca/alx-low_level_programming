@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *  main - Entry point
+ * main - Entry point
  *
  * description: 'a program that prints the size of various data types'
  *
