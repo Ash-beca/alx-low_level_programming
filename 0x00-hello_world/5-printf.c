@@ -3,10 +3,11 @@
 /**
  * main - Entry point
  *
- * description: to display a string using puts method'
+ * description: 'to display a string using puts method'
  *
  * Return: Always 0 (success)
  */
+
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
