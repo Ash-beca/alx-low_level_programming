@@ -5,7 +5,7 @@
  * followed by a new lines
  */
 
-int main(voi)
+int main(void)
 {
 	char ch;
 
