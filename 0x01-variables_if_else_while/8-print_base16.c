@@ -6,7 +6,7 @@
  */
 
 int main(void)
-
+{
 	int n;
 	char ch;
 
@@ -16,7 +16,7 @@ int main(void)
 	}
         for (ch = 'a'; ch <= 'f'; ch++)
         {
-		puthcar(ch);
+		putchar(ch);
 	}
         putchar('\n');
 	return (0);
