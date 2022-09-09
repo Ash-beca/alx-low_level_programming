@@ -2,8 +2,9 @@
 #include <time.h>
 
 /**
- * main - assigns a random nmber to int n everytime
- * it executes, and prints it
+ * main - assigns a random number to int n everytime
+ * 0-positive_or_negative
+ * it executes, and print it
  * Return: Always 0 (success)
  */
 
@@ -16,11 +17,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-                print("%d is positive\n", n);
+                printf("%d is positive\n", n);
 	else if (n == 0)
-                print("%d is zero\n", n);
+                printf("%d is zero\n", n);
 	else if (n < 0)
-		print("%d is negative\n", n);
+		printf("%d is negative\n", n);
 	return (0);
 
 }
