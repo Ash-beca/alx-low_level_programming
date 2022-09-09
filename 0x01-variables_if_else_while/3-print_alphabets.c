@@ -7,15 +7,15 @@
  * Return: Always 0 (Success)
  */
 
-   intmain(void)
+   int main(void)
 {
          int ch;
 
          for (ch ='a'a; ch <= 'z'; ch++)
-	         putchar (ch);
+	         putchar(ch);
          for (ch ='A'; ch <='Z'; ch++)
-	         putchar (ch);
+	         putchar(ch);
         putchar('\n');
         return (0);
 	
-}	
+}
