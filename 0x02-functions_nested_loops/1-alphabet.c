@@ -7,6 +7,8 @@
  * Return: Always 0 
  */
 
+void print_alphabet(void);
+
 
 void print_alphabet(void){
 	
@@ -23,4 +25,4 @@ int main (void)
 
 	
         return (0);
-}
+
