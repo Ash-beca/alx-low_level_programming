@@ -7,7 +7,7 @@
  * Reurn: interger
  */
 
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 	int last = n % 10;
 
