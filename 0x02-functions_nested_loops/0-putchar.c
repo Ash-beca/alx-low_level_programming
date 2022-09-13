@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints_putchar 
+ * main - prints_putchar
  * followed by a new line
  *Return: Always 0
  */
