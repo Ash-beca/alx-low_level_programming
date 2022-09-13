@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,7 +6,7 @@
  * Return: Always 0 
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
   	char c;
 	
