@@ -3,6 +3,8 @@
 /**
  * prints_alphabet - print alphabet
  *
+ * Description: prints the alphabet in lowercase, followed by a new line
+ *
  * Return: void
  */
 
