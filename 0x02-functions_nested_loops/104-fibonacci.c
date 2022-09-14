@@ -10,7 +10,7 @@ int main(void)
 {
 	long int total_sum, sum, first, second;
 
-	total_sum = o;
+	total_sum = 0;
 	sum = 0;
 	first = 0;
 	second = 1;
