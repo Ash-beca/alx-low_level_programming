@@ -1,32 +1,31 @@
 #include <stdio.h>
 
 /**
- * main -prints the sum of all even fibonacci numbers below 4,000,000
+ * main -prints the first 98 fibonacci numbers, starting with 1 and 2
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-	long int total_sum, sum, first, second;
+	long int sum, first, second, count;
 
-	total_sum = 0;
 	sum = 0;
 	first = 0;
 	second = 1;
+	count =0;
 
-	while (sum < 4000000)
+	while (sum < 97)
 	{
 		sum = first + second;
-		if (sum % 2 == 0)
-		{
-			total_sum += sum;
-		}
+		printf("%li, ", sum);
 		first = second;
 		second = sum;
-	}
 
-	printf("%li\n", total_sum);
+		count++;
+	}
+	sum = first + second;
+	printf("%li\n", sum);
 
 	return (0);
 }
