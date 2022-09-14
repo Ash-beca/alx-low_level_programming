@@ -1,7 +1,7 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
- * nain- prints the first 50 fibonacci number, starting with 1 and 2
+ * main - prints the first 50 fibonacci numbers, starting with 1 and 2 
  *
  * Return: Always 0
  */
@@ -31,3 +31,4 @@ int main(void)
 
 	return (0);
 }
+
