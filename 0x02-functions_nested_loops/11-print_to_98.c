@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * void print_to_98 - prints the numbers to 98
- * @n:starting integer
+ * print_to_98 - prints the numbers to 98
+ * @n: starting integer
  *
  * Description: prints all natural number from n - 98
  *
@@ -19,11 +20,11 @@ void print_to_98(int n)
 			n++;
 		}
 	}
-	else if (n > 98);
+	else if (n > 98)
 	{
 		while (n > 98)
 		{
-			ptintf("%d, ", n);
+			printf("%d, ", n);
 			n--;
 		}
 	}
