@@ -23,7 +23,7 @@ int main(void)
 			total_sum += sum;
 		}
 		first = second;
-		secong = sum;
+		second = sum;
 	}
 
 	printf("%li\n", total_sum);
