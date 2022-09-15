@@ -2,23 +2,23 @@
 
 /**
  * _isdigit - checks for a digit (0 through 9)
- *@c: checks for digits
+ *@c: parameter
  *
- * Return: 1 if c is a digit, otherwise 0
+ * Return: 1
  */
 
 int _isdigit(int c);
 {
-	char c;
+	char b;
 
-	int i = o;
+	int i = 0;
 
-	if ( c = '0' && c <= '9')
+	for (b = '0'; b <= '9'; c++)
 	{
-		return (1);
+		if (b == c)
+		{
+			num = 1;
+		}
 	}
-	else
-	{
-		return (0);
-	}
+	return (num);
 }
