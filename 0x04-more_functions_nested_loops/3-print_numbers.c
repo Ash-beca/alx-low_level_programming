@@ -2,20 +2,20 @@
 
 /**
  * main - prints the number from 0 to 9, followed by a new line
- * Return: 0
+ *
+ * Return: void
  */
 
 int main(void)
 {
-	int a 
-	
-	if (a = '0'; a > '10'; a++)
+	int a = '0'; 
 	{
-		_puthcar (a);
+		while(a >= '10')
+		{
+			_puthcar (a);
+			a++;
+		}
+		_putchar ('\n');
 	}
-	
-	_putchar ('\n');
 
-	return (0);
 }
-
