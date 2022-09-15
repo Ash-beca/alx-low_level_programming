@@ -13,12 +13,12 @@ int _isdigit(int c);
 
 	int i = 0;
 
-	for (b = '0'; b <= '9'; c++)
+	for (b = '0'; b <= '9'; c = c++)
 	{
 		if (b == c)
 		{
-			num = 1;
+			i = 1;
 		}
 	}
-	return (num);
+	return (i);
 }
