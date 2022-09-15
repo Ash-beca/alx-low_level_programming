@@ -9,7 +9,15 @@
 
 int _isupper (int c)
 {
-       	if ( c = 'A' && c <= 'Z')
-		return (1);
-	return (0);
+	char b;
+
+	int upper_alphs = 0;
+	for (b = 'A'; b <= 'Z'; b = b +=)
+	{
+		if ( b == c)
+		{
+			upper_alphs = 1;
+		}
+	}
+	return (upper_alphs);
 }
