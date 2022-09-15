@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for a digit (0 through 9)
+ * _isdigit - checks if is a digit
  *@c: parameter
- *
  * Return: 1
  */
 
 int _isdigit(int c);
 {
-	char b;
+	char digit;
 
-	int i = 0;
+	int num = 0;
 
-	for (b = '0'; b <= '9'; c = c++)
+	for (digit = '0'; digit <= '9'; digit = digit++)
 	{
-		if (b == c)
+		if (digit == c)
 		{
-			i = 1;
+			num = 1;
 		}
 	}
-	return (i);
+	return (num);
 }
