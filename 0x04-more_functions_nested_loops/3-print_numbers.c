@@ -3,7 +3,7 @@
 /**
  * main - prints the number from 0 to 9, followed by a new line
  *
- * Return: void
+ * Return: 0
  */
 
 int main(void)
@@ -16,6 +16,8 @@ int main(void)
 			a++;
 		}
 		_putchar ('\n');
+
+		return (0);
 	}
 
 }
