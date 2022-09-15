@@ -6,14 +6,15 @@
  * Return: 1
  */
 
-int _isupper (int c)
+int _isupper(int c)
 {
 	char k;
 
-	int upper_alphs = 0;
-	for (k = 'A'; k <= 'Z'; k = k ++)
+	int upper_alphs = 0
+		;
+	for (k = 'A'; k <= 'Z'; k = k++)
 	{
-		if ( k == c)
+		if (k == c)
 		{
 			upper_alphs = 1;
 		}
