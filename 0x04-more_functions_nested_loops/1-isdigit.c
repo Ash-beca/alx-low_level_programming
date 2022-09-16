@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - checks if is a digit
- *@c: parameter
+ * @c: parameter
  * Return: 1 or 0 depending on condtion
  */
 
@@ -19,5 +19,5 @@ int _isdigit(int c);
 			x = 1;
 		}
 	}
-	return (x);
+	return (0);
 }
