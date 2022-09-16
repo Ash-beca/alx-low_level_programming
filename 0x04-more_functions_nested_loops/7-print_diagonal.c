@@ -1,12 +1,13 @@
 #include "main.h"
 
 /*
- * print_diagonal - prints diaginal lines
+ * print_diagonal - prints lines in a diagonal view
  * @n: diagonal parameter
+ * Description: print_diagonal prints lines in diagonal view
  * Return: diagonal
  */
 
-void print_diagonal(void)
+void print_diagonal(int n)
 {
 	int x, i;
 
