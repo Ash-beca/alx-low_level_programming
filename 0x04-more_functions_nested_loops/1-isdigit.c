@@ -8,19 +8,18 @@
 
 int _isdigit(int c);
 {
-	char digit;
+	char ch;
 
 	int num = 0;
 
-	for (digit = '0'; digit <= '9'; digit = digit++)
+	for (ch = '0'; ch <= '9'; ch = ch++)
 	{
-		if (digit == c)
+		if (ch == c)
 		{
 			num = 1;
 		}
-		else
-		{
-			return (num);
-		}
 	}
+
+	return (num)
+	
 }
