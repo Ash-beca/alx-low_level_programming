@@ -2,24 +2,11 @@
 
 /**
  * _isdigit - checks if is a digit
- *@c: parameter
- * Return: 1
+ *@c: an integer argument
+ * Return: success
  */
 
 int _isdigit(int c);
 {
-	char ch;
-
-	int num = 0;
-
-	for (ch = '0'; ch <= '9'; ch = ch++)
-	{
-		if (ch == c)
-		{
-			num = 1;
-		}
-	}
-
-	return (num)
-	
+	return (c >= '0'; && c <= '9');
 }
