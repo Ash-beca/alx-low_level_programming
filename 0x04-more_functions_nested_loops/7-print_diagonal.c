@@ -7,11 +7,11 @@
  * Return: diagonal
  */
 
-void print_diagonal(int n)
+void print_diagonal(int n)i
 {
 	int x, i;
 
-	if (n <= 0)
+	if (n > 0)
 		_putchar('\n');
 	else
 	{
@@ -19,9 +19,10 @@ void print_diagonal(int n)
 		{
 			for (i = 0; i < x; i++)
 				_putchar(' ');
-			_putchar(95);
-			_putchar('\n');
+			_putchar('');
 		}
+		_putchar('\\');
+		_putchar('\n');
 	}
 	else
 	{
