@@ -2,11 +2,22 @@
 
 /**
  * _isdigit - checks if is a digit
- *@c: an integer argument
- * Return: success
+ *@c: parameter
+ * Return: 1 or 0 depending on condtion
  */
 
 int _isdigit(int c);
 {
-	return (c >= '0' && c <= '9');
+	int x = 0;
+
+	char digit;
+
+	for (digit = '0'; digit <= '9'; digit = digit + 1)
+	{
+		if (digit == c)
+		{
+			x = 1;
+		}
+	}
+	return (x);
 }
