@@ -3,7 +3,7 @@
 /*
  * print_diagonal - prints diaginal lines
  * @n: diagonal parameter
- * Retur: diagonal
+ * Return: diagonal
  */
 
 void print_diagonal(void)
@@ -18,7 +18,7 @@ void print_diagonal(void)
 		{
 			for (i = 0; i< x; i++)
 				_putchar(' ');
-			_putchar('\\');
+			_putchar(95);
 			_putchar('\n');
 		}
 	}
