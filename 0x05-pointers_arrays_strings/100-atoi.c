@@ -8,10 +8,10 @@
 
 int _atoi(char *s)
 {
-	int c = o;
+	int c = 0;
 	unsigned int ni = 0;
 	int min = 1;
-	int sis = 0;
+	int isi = 0;
 
 	while (s[c])
 	{
