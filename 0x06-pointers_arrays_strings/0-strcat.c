@@ -4,7 +4,7 @@
  * _strcat - concarnates two strings
  * @dest: destination
  * @src: source
- * Return: void
+ * Return: new char
  */
 
 char *_strcat(char *dest, char *src)
