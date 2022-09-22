@@ -10,11 +10,12 @@ char *string_toupper(char *x)
 {
 	int i = 0;
 
-	while (x[i])
+	while (upper[i] != '\0'; i++)
 	{
-		if (x[i] >= 97 && x[i] <= 122)
-			x[i] = x[i] - 32;
-		i++
+		if (upper[i] >= 'a' && upper[i] <= 'z')
+		{
+			upper[i] = upper[i] - 95;
+		}
 	}
-	return (x);
+	return (upper);
 }
