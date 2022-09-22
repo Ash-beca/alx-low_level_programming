@@ -3,10 +3,10 @@
 /**
  * leet - function thatvencodes a string into 1337
  * @s: string
- * Return: s
+ * Return: 0
  */
 
-char *leet(char *)
+char *leet(char *s)
 {
 	int i;
 
