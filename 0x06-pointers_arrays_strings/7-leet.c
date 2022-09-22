@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	int i, y;
-	
+
 	char alph[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char num[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
@@ -23,6 +23,6 @@ char *leet(char *s)
 			}
 		}
 	}
-		
+	
 	return (s);
 }
