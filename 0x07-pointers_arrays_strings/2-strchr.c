@@ -12,12 +12,12 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
+	int a;
 
 	while (1)
 	{
-		i = *s++;
-		if  (i == c)
+		a = *s++;
+		if  (a == c)
 		{
 			return (s - 1);
 		}
