@@ -2,6 +2,8 @@
 
 /**
  * _memset - fills memory with a constant byte
+ * @s: string
+ * @b: constant byte
  * @n: byte
  * Return: s
  */
