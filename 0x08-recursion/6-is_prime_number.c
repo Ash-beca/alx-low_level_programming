@@ -20,6 +20,7 @@ int prime_check(int f, int p)
 /**
  * is_prime_number - returns 1 if the input integer is a prime number
  * otherwise return 0
+ * @n: prime number
  * Return: 1 if
  */
 
