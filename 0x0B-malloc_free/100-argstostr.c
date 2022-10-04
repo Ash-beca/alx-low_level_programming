@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * argostr - prints args
+ * argstostr - prints args
  * @ac: width of grid
  * @av: height of grid
  * Return: 0
