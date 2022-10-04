@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 			if  (grid[i] != NULL)
 			{
 				for (j = 0; j < width; j++)
-					gride[i][j] = 0;
+					grid[i][j] = 0;
 			}
 			else
 			{ 
