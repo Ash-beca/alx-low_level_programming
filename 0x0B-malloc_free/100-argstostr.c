@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * argostr - prints args
@@ -28,10 +28,10 @@ char *argstostr(int ac, char **av)
 		x++;
 	}
 	count = count + ac +1;
-	str == malloc(sizeof(char) * count);
+	str = malloc(sizeof(char) * count);
 	if (str == NULL)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	for (x = 0; x < ac; x++)
 		{
