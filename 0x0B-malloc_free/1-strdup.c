@@ -6,7 +6,7 @@
  * @str: argument
  * Return: argument
  * Return: 0
- * */
+ */
 
 char *_strdup(char *str)
 {
