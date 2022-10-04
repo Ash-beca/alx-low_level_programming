@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * argostr - prints args
@@ -13,7 +14,7 @@ char *argstostr(int ac, char **av)
 	int count = 0, x = 0, y = 0, z = 0;
 
 	if (ac == 0 || av == NULL)
-		return (NUll);
+		return (NULL);
 
 	while (x < ac)
 	{
