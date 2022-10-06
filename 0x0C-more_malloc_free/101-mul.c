@@ -5,10 +5,10 @@
  * main - multiples two numbers
  * @argc: argument counter
  * @argv: argument vector
- * Return: pointer
+ * Return: 0
  */
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int num1, num2, mul;
 
