@@ -7,13 +7,13 @@ int _putchar(char c);
  * struct dog - a structures type
  * @name: dog's name
  * @age: dog's age
- * @owner: dog's owner
+ * @owner: owner's name
  */
 
 typedef struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 
 } dog_t;
