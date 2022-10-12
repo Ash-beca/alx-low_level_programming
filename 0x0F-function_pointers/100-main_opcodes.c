@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
-	s = (char*)main;
+	s = (char *)main;
 	for (y = 0; y < x - 1; y++)
 		printf("%02hhx ", s[y]);
 	printf("%02hhx\n", s[y]);
