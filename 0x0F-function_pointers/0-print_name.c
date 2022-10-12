@@ -3,8 +3,8 @@
 
 /**
  * print_name - prints a name
- * @name: string pointer
- * @f: pointer
+ * @name: argument
+ * @f: argument
  * Return: 0
  */
 
