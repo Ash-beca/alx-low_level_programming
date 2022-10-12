@@ -5,7 +5,7 @@
  * main - prints its own opcode
  * @argc: argument count
  * @argv: argument vector
- * Return: 0\
+ * Return: 0/
  */
 
 int main(int argc, char **argv)
@@ -19,13 +19,13 @@ int main(int argc, char **argv)
 			exit(1);
 	}
 	x = atoi(argv[1]);
-	if (a < 0)
+	if (x < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 	s = (char*)main;
-	for (y = 0; y <x - 1; y++)
+	for (y = 0; y < x - 1; y++)
 		printf("%02hhx ", s[y]);
 	printf("%02hhx\n", s[y]);
 	return (0);
