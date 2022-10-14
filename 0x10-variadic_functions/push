@@ -1,0 +1,3 @@
+git add .
+git commit -m "variadic functions"
+git push
