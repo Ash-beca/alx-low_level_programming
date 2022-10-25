@@ -10,6 +10,7 @@
 listint_t *newNode(const int num)
 {
 	listint_t *new;
+
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
