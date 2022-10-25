@@ -26,7 +26,7 @@ listint_t *newNode(const int num)
  * Return: new last element
  */
 
-listint_t *createNode(const int prmNbr)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
 
