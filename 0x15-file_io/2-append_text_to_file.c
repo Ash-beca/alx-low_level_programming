@@ -4,7 +4,7 @@
  * apprnd_text_to_file - appends text at the end of a file
  * @filename: filename
  * @text_content: added content
- * Return: 1 for success, -1 if fails
+ * Return: error code value
  */
 
 int append_text_to_file(const char *filename, char *text_content)
@@ -15,10 +15,11 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	if (fn == -1)
-		return (-1);
 
 	fn = open(filename, O_WRONLY | O_APPEND);
+
+	if (fn == -1)
+		return (-1);
 
 	if (text_content == NULL)
 		return (1);
