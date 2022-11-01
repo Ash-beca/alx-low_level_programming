@@ -23,7 +23,7 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - checks the code 
+ * main - checks the code
  * @argc: argument counts
  * @argv: argument vector
  * Return: 0
