@@ -8,7 +8,7 @@
  * Return: 0 -  success
  */
 
-int main(inr argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
 
