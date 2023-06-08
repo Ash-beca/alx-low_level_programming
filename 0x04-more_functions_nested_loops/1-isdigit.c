@@ -6,7 +6,7 @@
  * Return: 1 or 0 depending on condtion
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	int x = 0;
 
