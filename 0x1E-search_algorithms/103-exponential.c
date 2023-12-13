@@ -1,74 +1,78 @@
 #include "search_algos.h"
 
 /**
- * binary_search - a function that searches for a value in a
- * sorted array of integers using the Binary search algorithm
- * @array: pointer to the first element of the array to search
- * @size: number of elements in array
- * @value: value to search for
- * Return: -1 if array is NULL
+ * exponential_search - searching algorithm
+ * @array: set of sorted integers
+ * @size: size of array
+ * @value: value to find matching element in the array
+ *
+ * Description: exponential search algorithm to match value to element
+ * Return: -1 if no array or no value found OR index of matching element
  */
-
-int binary_search(int *array, size_t size, int value)
+int exponential_search(int *array, size_t size, int value)
 {
-	int low = 0;
-	int mid;
-	int high = size - 1;
-	size_t i = 0;
+	unsigned int bound;
 
-	while (low <= high)
+	if (array == NULL || size == 0)
+		return (-1);
+
+	bound = 1;
+	while (bound < size && array[bound] < value)
 	{
-		for (i = 0, printf("Searching in array: "); i < size; i++)
-			printf("%d%s", array[i], i + 1 == size ? "\n" : ", ");
-
-		mid = low + ((high - low) / 2);
-
-		if (array[mid] == value)
-		{
-			return (mid);
-		}
-
-		else if (value < array[mid])
-		{
-			high = mid - 1;
-		}
-
-		else if (value > array[mid])
-		{
-			low = mid + 1;
-		}
+		printf("Value checked array[%d] = [%d]\n", bound, array[bound]);
+		bound *= 2;
 	}
-	return (-1);
+	printf("Value found between indexes [%d] and [%d]\n",
+	       (bound / 2), min(bound, size - 1));
+	return (bs_helper(array, value, (bound / 2 - 1), min(bound + 1, size)));
 }
 
 /**
- * exponential_search - a function that searches for a value in a
- * sorted array of integers using the Exponential search algorithm
- * @array: pointer to the first element of the array to search
- * @size: number of elements in array
- * @value: value to search for
- * Return: -1 if array is NULL
+ * bs_helper - helper function for bsearch
+ * @array: array of integer values
+ * @key: key to match array element
+ * @lower: subarray before mid
+ * @higher: subarray after mid
+ *
+ * Description: Recursively split array in halfs until matching elem found
+ * Return: -1 if value not present or array is NULL OR index if found
  */
-
-int exponential_search(int *array, size_t size, int value)
+int bs_helper(int *array, int key, int lower, int higher)
 {
-	size_t i = 1, new = 0;
-	int var;
+	int i;
+	int mid;
 
-	if (array[0] == value)
-		return (0);
+	if (lower + 1 == higher)
+		return (-1);
 
-	while (i < size && array[i] <= value)
+	printf("Searching in array: ");
+	for (i = lower + 1; i < higher; i++)
 	{
-		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-		i = i * 2;
+		printf("%d", array[i]);
+		if (i + 1 < higher)
+			printf(", ");
 	}
+	printf("\n");
 
-	new = (i >= size ? size : i + 1) - (i / 2);
-	i = i / 2;
-	printf("Value found between indexes [%lu] and [%lu]\n",
-			i, i * 2 >= size ? size - 1 : i * 2);
-	var = binary_search(array + i, new, value);
+	mid = (lower + higher) / 2;
+	if (array[mid] == key)
+		return (mid);
 
-	return (var == -1 ? var : var + (int)i);
+	if (key < array[mid])
+		return (bs_helper(array, key, lower, mid));
+	else
+		return (bs_helper(array, key, mid, higher));
+}
+
+/**
+ * min - compare function
+ * @a: first parameter to compare
+ * @b: second parameter to compare
+ *
+ * Description: find smallest of the two values
+ * Return: smaller value
+ */
+int min(int a, int b)
+{
+	return (a < b ? a : b);
 }
