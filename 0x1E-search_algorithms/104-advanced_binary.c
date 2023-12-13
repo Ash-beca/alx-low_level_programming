@@ -1,69 +1,64 @@
 #include "search_algos.h"
 
 /**
- * advanced_binary - search algorithm
- * @array: array of integer values
- * @size: size of the array
- * @value: to find matching element
+ * rec_search - searches for a value in an array of
+ * integers using the Binary search algorithm
  *
- * Description: Recursively split array in halfs until matching elem found
- * Return: -1 if value not present or array is NULL OR index if found
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
-int advanced_binary(int *array, size_t size, int value)
+int rec_search(int *array, size_t size, int value)
 {
+	size_t half = size / 2;
+	size_t i;
+
 	if (array == NULL || size == 0)
 		return (-1);
 
-	return (bs_helper2(array, value, 0, size - 1));
-}
+	printf("Searching in array");
 
-/**
- * bs_helper2 - helper for search algorithm
- * @array: array of integer values
- * @key: value to match element
- * @low: lower half of subarray
- * @high: upper half of subarray
- *
- * Description: Recursively split array in halfs until matching elem found
- * Return: -1 if value not present or array is NULL OR index if found
- */
-int bs_helper2(int *array, int key, int low, int high)
-{
-	int mid;
+	for (i = 0; i < size; i++)
+		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
 
-	if (high >= low)
-	{
-		mid = low + (high - low) / 2;
-		helper2(array, low, high);
-		if ((mid == 0 || key > array[mid - 1]) && array[mid] == key)
-			return (mid);
-		else if (key > array[mid])
-			return (bs_helper2(array, key, (mid + 1), high));
-		else
-			return (bs_helper2(array, key, low, mid));
-	}
-	return (-1);
-}
-
-/**
- * helper2 - search algorithm
- * @array: array of integer values
- * @low: lower half of subarray
- * @high: upper half of subarray
- *
- * Description: print sub array for each call
- * Return: na voided function
- */
-void helper2(int *array, int low, int high)
-{
-	int i;
-
-	printf("Searching in array: ");
-	for (i = low; i <= high; i++)
-	{
-		printf("%d", array[i]);
-		if (i != high)
-			printf(", ");
-	}
 	printf("\n");
+
+	if (half && size % 2 == 0)
+		half--;
+
+	if (value == array[half])
+	{
+		if (half > 0)
+			return (rec_search(array, half + 1, value));
+		return ((int)half);
+	}
+
+	if (value < array[half])
+		return (rec_search(array, half + 1, value));
+
+	half++;
+	return (rec_search(array + half, size - half, value) + half);
+}
+
+/**
+ * advanced_binary - calls to rec_search to return
+ * the index of the number
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
+ */
+int advanced_binary(int *array, size_t size, int value)
+{
+	int index;
+
+	index = rec_search(array, size, value);
+
+	if (index >= 0 && array[index] != value)
+		return (-1);
+
+	return (index);
 }
